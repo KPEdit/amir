@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 project(amir_tests)
 
-set(CMAKE_WINDOWS_EPORT_ALL_SYMBOLS ON)
-set(GTEST_ROOT googletest/googletest)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+set(GTEST_ROOT google_test/googletest)
 
 add_library(gtest STATIC
   ${GTEST_ROOT}/src/gtest_main.cc
@@ -11,7 +11,7 @@ add_library(gtest STATIC
 target_include_directories(gtest PUBLIC ${GTEST_ROOT}/include)
 target_include_directories(gtest PRIVATE ${GTEST_ROOT})
 
-add_library(libs SHARED lib/prog2.cpp lib/prog2.h)
+add_library(libs STATIC lib/Prog2.cpp lib/Prog2.h)
 target_include_directories(libs PUBLIC lib)
 
 add_executable(main main.cpp)

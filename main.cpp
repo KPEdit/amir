@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Prog2.h"
+#include <Prog2.h>
 
 using namespace std;
 using namespace prog2;

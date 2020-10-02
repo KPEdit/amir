@@ -4,3 +4,6 @@
 [submodule "amir"]
 	path = amir
 	url = https://github.com/mullerty/Mephi.git
+[submodule "google_test"]
+	path = google_test
+	url = https://github.com/google/googletest
